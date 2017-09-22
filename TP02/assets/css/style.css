@@ -1,0 +1,278 @@
+
+
+/*header*/
+html{
+  height: 100%;
+}
+body{
+  font-family: Arial,sans-serif;
+  color : black;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+  background-color: #14597f;
+  border-bottom:solid #0b2d3d;
+
+}
+header>div{
+  max-width: 1200px;
+  padding :0 20px;
+  margin: 0 auto;
+  height:100%;
+}
+
+header>div>a{
+  display:inline-block;
+  height: 100%;
+}
+
+header>div>a>img{
+  position: relative;
+  max-height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav{
+  display: inline-block;
+  float: right;
+  height: 100%;
+}
+nav>ul{
+  height:100%;
+  display:flex;
+  align-items: center;
+  margin:0 0px;
+}
+nav>ul>li{
+  position: relative;
+  padding: 10px 15px;
+  list-style-type:none;
+}
+.fa-shopping-cart{
+  color:#14597f;
+}
+nav a{
+  text-decoration: none;
+  color:white;
+}
+
+.active{
+  background-color: #1fb5e9;
+  border-radius: 4px;
+}
+.count{
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  z-index: 1;
+  height:45%;
+  width: 45%;
+  background-color:#d9534f;
+  font-size: 55%;
+  font-weight: bold;
+  border-radius: 100%;
+  text-align: center;
+  line-height:21px;
+}
+
+/*Main*/
+main {
+  max-width: 1200px;
+  min-width: 1200px;
+  padding :0 20px;
+  margin: 0 auto;
+  flex: 1;
+
+}
+main>h1{
+  display: inline-block;
+  width: 50%;
+}
+main>p{
+  display: block;
+  width: 50%;
+}
+main>img{
+  display: inline-block;
+  float:right;
+  max-height: 40%;
+  max-width: 50%;
+}
+.btn{
+
+  padding : 10px 20px;
+  text-decoration: none;
+  background-color: #14597f;
+  border-radius: 4px;
+  font-size: 100%;
+  border: solid 1px black;
+  color:white;
+  -webkit-transition: background-color 0.2s;
+
+}
+.btn>i{
+  margin: 0px 10px;
+  color:white;
+
+}
+.btn:hover{
+  background-color: #1fb5e9;
+}
+/*footer*/
+
+
+footer{
+  height: 70px;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  background-color: #eeeeee;
+  border-top:1px solid #cccccc ;
+
+}
+
+/*Products*/
+.selected{
+  background-color: #ddf2fb;
+}
+.sidebar{
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  margin:0;
+  padding: 10px;
+}
+.sidebar button:not(.selected) {
+  background-color: white;
+}
+.sidebar button{
+  border:1px solid #999999;
+  -webkit-transition: background-color 0.2s;
+  text-align: left;
+  padding: 10px;
+}
+.sidebar button:not(:last-child){
+  border-bottom: none;
+}
+.sidebar button:hover{
+  background-color: #f3f3f3;
+}
+
+
+.mainProducts{
+  display: inline-block;
+  float: right;
+  box-sizing: border-box;
+  width: 75%;
+  margin:0;
+}
+#product-categories{
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border:1px solid #999999;
+}
+#product-criteria{
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border:1px solid #999999;
+}
+#products-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+.mainProducts>h1{
+  display: inline-block;
+}
+.mainProducts>p{
+  float: right;
+}
+#products-list>a{
+  display: block;
+  border: 1px solid grey ;
+  border-radius: 4px;
+  text-decoration: none;
+  color:black;
+  width: 29%;
+  height: 40%;
+  padding: 0px 10px;
+  margin: 5px;
+  -webkit-transition: background-color 0.2s;
+}
+#products-list>a:hover{
+  background-color: #f3f3f3;
+}
+
+#products-list *{
+  margin: 2px;
+}
+#products-list a>section>img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#products-list a>section>p{
+ float: right;
+}
+.contentContact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border:1px solid #999999;
+  border-radius: 4px;
+}
+
+.content>.row{
+  width: 50%;
+}
+.contentContact>section{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+}
+.contentContact a{
+  text-decoration: none;
+}
+.contentContact>section>i{
+  height: 100px;
+  font-size: 100px;
+}
+.formProduct{
+  float: right;
+}
+.row p{
+   display: inline-block;
+}
+.forBorderProduct{
+  border-bottom: dashed;
+  margin-bottom: 20px;
+}
+.formProduct input{
+  width: 50px;
+  height: 25px;
+}
+.form-control{
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+
+
+
+
