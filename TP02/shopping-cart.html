@@ -30,52 +30,53 @@
   </div>
 </header>
 
-  <main>
+<main>
   <h1>Panier</h1>
 
-    <table style="width:100%">
-      <tr>
-        <th></th>
-        <th>Produits</th>
-        <th>Prix Unitaire</th>
-        <th>Quantité</th>
-        <th>Prix</th>
-      </tr>
-      <tr>
-        <td><button>X</button></td>
-        <td><a href="product.html">AppleTV</a></td>
-        <td>249.99 $</td>
-        <td><button>-</button>1<button>+</button></td>
-        <td>249.99 $</td>
-      </tr>
-      <tr>
-        <td><button>X</button></td>
-        <td><a href="product.html">iMac 27"</a></td>
-        <td>2299.99 $</td>
-        <td><button>-</button>1<button>+</button></td>
-        <td>2299.99 $</td>
-      </tr>
-      <tr>
-        <td><button>X</button></td>
-        <td><a href="product.html">Console PS3</a></td>
-        <td>349.99 $</td>
-        <td><button>-</button>1<button>+</button></td>
-        <td>349.99 $</td>
-      </tr>
-    </table>
+  <table >
+    <tr class="ligne" style="font-weight: bold;" >
+      <th class="c1"></th>
+      <th>Produits</th>
+      <th>Prix Unitaire</th>
+      <th>Quantité</th>
+      <th class="c4">Prix</th>
+    </tr>
+    <tr >
+      <td><button class="sc-button"><i class="fa  fa-close"></i></button></td>
+      <td><a href="product.html">AppleTV</a></td>
+      <td>249.99 $</td>
+      <td><button class="sc-button"><i class="fa  fa-minus"></i></button>1<button class="sc-button"><i class="fa  fa-plus"></i></button></td>
+      <td class="c4">249.99 $</td>
+    </tr>
+    <tr>
+      <td><button class="sc-button"><i class="fa  fa-close"></i></button></td>
+      <td><a href="product.html">iMac 27"</a></td>
+      <td>2299.99 $</td>
+      <td><button class="sc-button"><i class="fa  fa-minus"></i></button>1<button class="sc-button"><i class="fa  fa-plus"></i></button></td>
+      <td class="c4">2299.99 $</td>
+    </tr>
+    <tr class="ligne">
+      <td><button class="sc-button"><i class="fa  fa-close"></button></td>
+      <td><a href="product.html">Console PS3</a></td>
+      <td>349.99 $</td>
+      <td><button class="sc-button"><i class="fa  fa-minus"></i></button>1<button class="sc-button" ><i class="fa  fa-plus"></i></button></td>
+      <td class="c4">349.99 $</td>
+    </tr>
+  </table>
 
-    <p>Total : 2849.97 $</p>
-    <button><i class="fa  fa-trash"></i> Vider le Panier</button>
-    <button > Commander <i class="fa  angle-double-right"></i> </button>
-  </main>
+  <p class="totalPrice">Total : <el class="price">2849.97 $</el></p>
+  <button class="btn trash"><i class="fa  fa-trash"></i> Vider le Panier</button>
+  <button class="btn order" onclick="location.href='order.html';"> Commander <i class="fa  fa-angle-double-right"></i> </button>
+</main>
 
-  <footer>
-    <p>
-      Nous sommes une équipe motivée, pleine d'entrain </br>
-      Nos Membres </br>
-      Antonio Dominguez Trujillo, matricule 1921364 </br>
-      Aurélien Gignon, matricule 1920925
-    </p>
-  </footer>
+
+<footer>
+  <p>
+    Nous sommes une équipe motivée, pleine d'entrain </br>
+    Nos Membres </br>
+    Antonio Dominguez Trujillo, matricule 1921364 </br>
+    Aurélien Gignon, matricule 1920925
+  </p>
+</footer>
 </body>
 </html>

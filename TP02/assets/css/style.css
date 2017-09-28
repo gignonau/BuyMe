@@ -1,6 +1,19 @@
 
+/*PLAN for the CSS File
+  -for all the website
+  -reusable elements
+  -header
+  -main
+  -footer
+  -product
+  -products
+  -contact
+  -shopping cart
+  -confirmation page
+ */
 
-/*header*/
+/*For all the web site*/
+
 html{
   height: 100%;
 }
@@ -14,6 +27,59 @@ body{
   flex-direction: column;
 }
 
+/*REUSABLE ELEMENTS INTO ALL THE WEBSITE*/
+
+.row{
+  display: flex ;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.row>.col{
+  width: 50%;
+  box-sizing: border-box;
+}
+.row p{
+  display: inline-block;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px  10px 10px 0px;
+}
+
+.form-control{
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding: 7px;
+}
+
+.price,.numOrder{
+  font-weight: bold;
+}
+
+.btn{
+
+  padding : 10px 20px;
+  text-decoration: none;
+  background-color: #14597f;
+  border-radius: 4px;
+  font-size: 100%;
+  border: solid 1px black;
+  color:white;
+  -webkit-transition: background-color 0.2s;
+
+}
+.btn>i{
+  margin: 0px 10px;
+  color:white;
+
+}
+.btn:hover{
+  background-color: #1fb5e9;
+}
+
+/*HEADER*/
 header{
   height: 60px;
   width: 100%;
@@ -94,7 +160,9 @@ main {
 }
 main>h1{
   display: inline-block;
-  width: 50%;
+}
+h2{
+  margin :10px 0px;
 }
 main>p{
   display: block;
@@ -106,26 +174,7 @@ main>img{
   max-height: 40%;
   max-width: 50%;
 }
-.btn{
 
-  padding : 10px 20px;
-  text-decoration: none;
-  background-color: #14597f;
-  border-radius: 4px;
-  font-size: 100%;
-  border: solid 1px black;
-  color:white;
-  -webkit-transition: background-color 0.2s;
-
-}
-.btn>i{
-  margin: 0px 10px;
-  color:white;
-
-}
-.btn:hover{
-  background-color: #1fb5e9;
-}
 /*footer*/
 
 
@@ -166,7 +215,6 @@ footer{
 .sidebar button:hover{
   background-color: #f3f3f3;
 }
-
 
 .mainProducts{
   display: inline-block;
@@ -226,17 +274,29 @@ footer{
 #products-list a>section>p{
  float: right;
 }
+
+/*PRODUCT*/
+
+.forBorderProduct{
+  border-bottom: dashed;
+  margin-bottom: 20px;
+}
+.formProduct input{
+  width: 50px;
+  height: 25px;
+}
+
+ /*CONTACT */
 .contentContact{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border:1px solid #999999;
   border-radius: 4px;
+  align-items:flex-start;
+  padding: 20px 0px 0px 0px;
 }
 
-.content>.row{
-  width: 50%;
-}
 .contentContact>section{
   display: flex;
   flex-direction: column;
@@ -248,6 +308,10 @@ footer{
 }
 .contentContact a{
   text-decoration: none;
+  color : #14597f;
+}
+.contentContact a:visited{
+  color : #14597f;
 }
 .contentContact>section>i{
   height: 100px;
@@ -256,23 +320,72 @@ footer{
 .formProduct{
   float: right;
 }
-.row p{
-   display: inline-block;
-}
-.forBorderProduct{
-  border-bottom: dashed;
-  margin-bottom: 20px;
-}
-.formProduct input{
-  width: 50px;
-  height: 25px;
-}
-.form-control{
-  border: 1px solid #999999;
-  border-radius: 4px;
-}
 
 
+/*SHOPPING CART
+the label 'sc' is of Shopping cart*/
+/*AND .numOrder is for the confirmation page*/
+table{
+  width:100%;
+  text-align: left;
+  border-collapse: collapse;
+}
 
+table td{
+  padding: 10px 10px;
+}
+table a{
+  text-decoration: none;
+  color:#14597f ;
+}
+table a:visited{
+  color:#14597f ;
+}
 
+.ligne>th, .ligne>td{
+  border-bottom: 1px solid black;
+}
+
+.c1{
+  width: 30px;
+}
+
+.c4{
+  text-align: right;
+}
+
+.sc-button{
+  border-radius:20px;
+  border: solid 0px black;
+  background-color: #dddddd;
+  -webkit-transition: background-color 0.2s;
+  width: 20px;
+  height: 20px;
+  margin: 0px 20px;
+  padding:0px;
+}
+.sc-button:hover{
+  background-color: #bbbbbb;
+}
+.sc-button .fa {
+}
+
+.trash{
+  float:left;
+}
+.totalPrice {
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
+.order{
+  float: right;
+}
+
+/*Confirmation Page*/
+.col label{
+  font-weight: bold;
+  margin: 10px 0px ;
+}
 
